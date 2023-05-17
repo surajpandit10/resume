@@ -1,0 +1,341 @@
+
+.Header-search{
+    position:absolute;
+    display: flex;
+    padding: 0 0 0 0px;
+    top: 50%;
+    left: 10%;
+    transform: translate(0%,-50%);
+}
+.search-logo{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-20%,-45%);
+    height: 25px;
+}
+input{
+    height: 40px;
+    width: 350px;
+    border: none;
+    padding: 0 45px;
+    border-radius: 20px;
+}
+
+.Browse-grid{
+    display: grid;
+    grid-area: auto;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: transparent;
+    margin: 5px 35px;
+}
+
+.Browse-art{
+    padding: 20px;
+    color: white;
+    height: 140px;
+    width: 140px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background: grey;
+    overflow: hidden;
+}
+.Browse-background{
+    height: 100px;
+    width: 100px;
+    bottom: -45px;
+    left: 75px;
+    transform: rotate(30deg);
+}
+.Browse-art:nth-child(1){
+    background: #27856a;
+}
+.Browse-art:nth-child(1)>.Browse-background{
+    background: url("https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(2){
+    background: #1e3264;
+}
+.Browse-art:nth-child(2)>.Browse-background{
+    background: url("https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(3){
+    background: #8d67ab;
+}
+.Browse-art:nth-child(3)>.Browse-background{
+    background: url("https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(4){
+    background: #e8115b;
+}
+.Browse-art:nth-child(4)>.Browse-background{
+    background: url("https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(5){
+    background: #8d67ab;
+}
+.Browse-art:nth-child(5)>.Browse-background{
+    background: url("https://t.scdn.co/images/d0fb2ab104dc4846bdc56d72b0b0d785.jpeg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(6){
+    background: #7358ff;
+}
+.Browse-art:nth-child(6)>.Browse-background{
+    background: url("https://concerts.spotifycdn.com/images/live-events_category-image.jpg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(7){
+    background: #b49bc8;
+}
+.Browse-art:nth-child(7)>.Browse-background{
+    background: url("https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(8){
+    background: #f037a5;
+}
+.Browse-art:nth-child(8)>.Browse-background{
+    background: url("https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(9){
+    background: #9cf0e1;
+}
+.Browse-art:nth-child(9)>.Browse-background{
+    background: url("https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(10){
+    background: #d7f27d;
+}
+.Browse-art:nth-child(10)>.Browse-background{
+    background: url("https://t.scdn.co/images/96b5132876eb4e818723555ce365cd87.jpeg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(11){
+    background: #8d67ab;
+}
+.Browse-art:nth-child(11)>.Browse-background{
+    background: url("https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(12){
+    background: #e8115b;
+}
+.Browse-art:nth-child(12)>.Browse-background{
+    background: url("https://i.scdn.co/image/ab67706f0000000221a2087747d946f16704b8af");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(13){
+    background: #7358ff;
+}
+.Browse-art:nth-child(13)>.Browse-background{
+    background: url("https://t.scdn.co/images/c6677aa51acf4121b66b9d1f231bd427.png");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(14){
+    background: #148a08;
+}
+.Browse-art:nth-child(14)>.Browse-background{
+    background: url("https://i.scdn.co/image/ab67706f0000000284a1ec26f589f0d569805a07");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(15){
+    background: #af2896;
+}
+.Browse-art:nth-child(15)>.Browse-background{
+    background: url("https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(16){
+    background: #eb1e32;
+}
+.Browse-art:nth-child(16)>.Browse-background{
+    background: url("https://t.scdn.co/images/16e40e64d2a74fa8a0a020d456e6541d.jpeg");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(17){
+    background: #0d73ec;
+}
+.Browse-art:nth-child(17)>.Browse-background{
+    background: url("https://t.scdn.co/images/713254a577a64338a450481329f0d83f.jpeg");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(18){
+    background: #509bf5;
+}
+.Browse-art:nth-child(18)>.Browse-background{
+    background: url("https://t.scdn.co/images/8e508d7eb5b843a89c368c9507ecc429.jpeg");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(19){
+    background: #1e3264;
+}
+.Browse-art:nth-child(19)>.Browse-background{
+    background: url("https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac");
+    background-size: contain;
+    position: relative;
+}
+.Browse-art:nth-child(20){
+    background: #b49bc8;
+}
+.Browse-art:nth-child(20)>.Browse-background{
+    background: url("https://t.scdn.co/images/a1817e719adc4716b8f7a8ccecf64d9b");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(21){
+    background: #283ea3;
+}
+.Browse-art:nth-child(21)>.Browse-background{
+    background: url("https://t.scdn.co/images/0dcbe54ffb604b37b1ae96223f2524be");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(22){
+    background: #8c1932;
+}
+.Browse-art:nth-child(22)>.Browse-background{
+    background: url("https://i.scdn.co/image/ab67706f0000000213601d4833623a4d6b328e38");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(23){
+    background: #ba5d07;
+}
+.Browse-art:nth-child(23)>.Browse-background{
+    background: url("https://t.scdn.co/images/4c8b58ab42b54296ad5379514d36edac");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(24){
+    background: #148a08;
+}
+.Browse-art:nth-child(24)>.Browse-background{
+    background: url("https://i.scdn.co/image/ab67706f00000002978b9f4a4f40b430fd0d837e");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(25){
+    background: #283ea3;
+}
+.Browse-art:nth-child(25)>.Browse-background{
+    background: url("https://t.scdn.co/images/1a416fb97f5647858c7f09c9cb6e7301");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(26){
+    background: #f59b23;
+}
+.Browse-art:nth-child(26)>.Browse-background{
+    background: url("https://t.scdn.co/images/27922fb7882e4d078c59b29cef4111b9");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(27){
+    background: #1e3264;
+}
+.Browse-art:nth-child(27)>.Browse-background{
+    background: url("https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(28){
+    background: #ff4632;
+}
+.Browse-art:nth-child(28)>.Browse-background{
+    background: url("https://t.scdn.co/images/fada056dcfd54cd28faf80d62b7059c6.jpeg");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(29){
+    background: #477d95;
+}
+.Browse-art:nth-child(29)>.Browse-background{
+    background: url("https://i.scdn.co/image/ab67706f000000028ed1a5002b96c2ea882541b2");
+    background-size: contain;
+    position: relative;
+}
+
+.Browse-art:nth-child(30){
+    background: #ffc864;
+}
+.Browse-art:nth-child(30)>.Browse-background{
+    background: url("https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg");
+    background-size: contain;
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+    .Browse-grid{
+                grid-template-columns: auto auto auto auto;
+                justify-content: space-around;
+            
+            }
+    }
+    @media only screen and (max-width: 1050px) {
+        .Browse-grid{
+                    grid-template-columns: auto auto auto;
+                    justify-content: space-around;
+                }
+    }
+  @media only screen and (max-width: 1050px) {
+          .Header-search{display:none
+      }
+    }
+    @media only screen and (max-width: 800px) {
+            .Browse-grid{
+                        grid-template-columns: auto auto;
+                        justify-content: space-around;
+                    }
+    }
+    @media only screen and (max-width: 600px) {
+        .Browse-grid{
+                    grid-template-columns: auto;
+                    justify-content: center;
+                }
+            }

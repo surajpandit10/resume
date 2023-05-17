@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="./Img/Spotify_logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./CSS/style.CSS">
+    <link rel="stylesheet" href="./CSS/Menu.css">
+    <link rel="stylesheet" href="./CSS/Header.css">
+    <link rel="stylesheet" href="./CSS/song.css">
+    <link rel="stylesheet" href="./CSS/Search.css">
+
+    <title>Spotify-Clone-Search</title>
+</head>
+<style>
+
+    </style>
+<body>
+    <div class="box">
+            <!--                        Nav Menu                                -->
+            <div class="section menu" id="menu">
+                <img class="logo" src="./Img/Spotify.png" title="Spotify" id="logo">
+                <ul class="menu-list">
+                    <li onclick="Home(this)"><span class="material-symbols-sharp">home</span><h4>Home</h4></li>
+                    <li onclick="Search(this)"><span class="material-symbols-sharp">search</span><h4>Search</h4></li>
+                    <li onclick="Library(this)"><span class="material-symbols-sharp">library_music</span><h4>Your Library</h4></li>
+                </ul>
+                <ul class="menu-list">
+                    <li><span class="material-symbols-sharp">add_box</span><h4>Create Playlist</h4></li>
+                    <li><span class="material-symbols-sharp">favorite</span><h4>Liked Song</h4></li>
+                </ul>
+                <ul class="menu-list">
+                    <li> <h5>Legal </h5> <h5> PrivacyCenter</h5> </li>
+                    <li><h5>PrivacyPolocy</h5></li>
+                    <li><h5>Cookies</h5></li>
+                    <li><h5>About Ads</h5></li>
+                </ul>
+                <button class="language">
+                    <span class="material-symbols-sharp" style="position: relative;font-size: 20px;top: 6px;left: 10px;">
+                    language</span><h4>English</h4></button>
+            </div>
+                <!--                        /Nav Menu                                -->
+    
+        <div class="section container">
+            <!--                        header login menu                       -->
+            <div class="header">
+                <ul type="none" class="header-icon">
+                    <li title="Go back" class="circle"><span class="material-symbols-rounded dark1">navigate_before</span></li>
+                    <li title="Go forward" class="circle"><span class="material-symbols-rounded dark2">navigate_next</span></li>
+                </ul>
+                <form class="Header-search">
+                    <img class="search-logo" src="./Img/search.svg"><input type="search" placeholder="What do you want to listen to?">
+                </form>
+                <ul type="none" class="Header-list">
+                    <li>Premium</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                    <li>|</li>
+                    <li>Sign up</li>
+                    <li><div class="log-in">Log in</div></li>
+                </ul>
+                <div class="responsive-header">
+                    <ul type="none" class="responsive-nav">
+                        <li>
+                            <img class="responsive-logo" src="./Img/Spotify.png" title="Spotify">
+                        </li>
+                        <li class="nav-btn" id="open" onclick="hamburgeropen()">
+                            <div class="hamburgeropen"></div>
+                            <div class="hamburgeropen"></div>
+                            <div class="hamburgeropen"></div>
+                        </li>
+                        <li class="nav-btn" id="close" onclick="hamburgerclose()" style="display: none;">
+                            <div class="hamburgerclose"></div>
+                          
+                            <div class="hamburgerclose"></div>
+                        </li>
+    
+                </ul>
+                </div>
+            </div>
+            <!--                        /header login menu                       -->
+            <div class="main">
+
+                <div class="focus-title">
+                    <div class="title-heading">
+                        <h3>Browse all</h3>
+                        
+                    </div>
+                    <!-- Browse grid-->
+                    <div class="Browse-grid">                        
+                            
+
+                            <div class="Browse-art">
+                                <h3>Podcasts</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Made For You</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Charts</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>New Releases</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Discover</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Live Events</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Bollywood</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Punjabi</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Tamil</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Telugue</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Indie</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Gaming</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Radar</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Equal</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Pop</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Fresh Finds</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Marathi</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Summer</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Wellness</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Devotional</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Indian Classical</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Romance</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Decades</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>K-Pop</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Netflix</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Disney</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Hip-Hop</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Party</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Instrumental</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+                            <div class="Browse-art">
+                                <h3>Dance /<br>Electronic</h3>  
+                                <div class="Browse-background"></div>
+                            </div>
+
+                    </div>
+                    <!-- /Browse grid-->
+                </div>
+
+                 <!--      /Footer  title         -->
+                <div class="about-footer">
+                    <div class="about-part">
+                        <div class="about-footer part">
+                            <ul type="none">
+                                <li><h3>Company</h3></li>
+                                <li>About</li>
+                                <li>Jobs</li>
+                                <li>For the Record</li>
+                            </ul>
+                        </div>
+                        <div class="about-footer part">
+                            <ul type="none">
+                                <li><h3>Community</h3></li>
+                                <li>For Artists</li>
+                                <li>Developers</li>
+                                <li>Advertising</li>
+                                <li>Investors</li>
+                                <li>Vendors</li>
+                                <li>Spotify for Work</li>
+                            </ul>
+                        </div>
+                        <div class="about-footer part">
+                            <ul type="none">
+                                <li><h3>Useful links</h3></li>
+                                <li>Support</li>
+                                <li>Free Mobile App</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about-part">    
+                        <div class="about-footer part">
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="creator">
+                    &reg 2023 Spotify Clone Created by Mohd Faizan mirza
+                </div>
+                 <!--      /Footer  title         -->
+
+            </div> 
+        </div>
+        <div class="footer-fixed" style="border-top:1px solid black">
+            <div class="ads">PREVIEW OF SPOTIFY <br>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</div>
+            <div class="signupfree">
+                <div class="btn-signup">Sign up free</div>
+            </div>
+            </div>
+    </div>
+    <script src="./JS/Hamburger.js"></script>
+    <script src="./JS/Hyperlink.js"></script>
+</body>
+</html>

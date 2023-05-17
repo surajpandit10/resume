@@ -1,0 +1,140 @@
+.Library{
+    height: 250px;
+    background: linear-gradient(180deg,#8398ae,#495460);
+    padding: 50px;
+    color:white;
+    width: auto;
+    display: flex;
+    justify-content: normal;
+}
+.Library-album{
+    height: 200px;
+    width: 200px;
+    background: url("https://t.scdn.co/images/d0fb2ab104dc4846bdc56d72b0b0d785.jpeg");
+    background-size: contain;
+    margin: 0 50px 0 0;
+}
+.album-title h1{
+    font-size: 55px;
+}
+.Library-song{
+    background: linear-gradient(180deg,#3a434c, transparent);
+    height: auto;
+    padding: 50px;
+}
+
+.songItem{
+        display: flex;
+        height: 70px;
+        justify-content: space-between;
+        font-size: 20px;
+        margin: 15px 0;
+        overflow: hidden;
+        cursor: default;
+}
+.songItem:hover{
+    padding:0.5px;
+    box-shadow:2px 2px 100px #4a5662 inset;
+}
+.songItem img{
+    border:5px;
+    height: 70px;
+}
+.songItemContainer{
+    background: transparent;
+    padding: 5px 10px;
+    overflow: hidden;
+    color:white;
+}
+.songName{
+    margin: 23px 0;
+}
+
+.songlistplay{
+    display: flex;
+    margin: 10px;
+}
+
+.timestamp{
+    margin: 10px 50px;
+    height: 50px;
+    width: 70px;
+}
+.play{font-size: 45px;height: 50px;width: 50px;cursor: pointer;}
+.songInfo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+#myProgressBar{
+    padding: 0;
+    margin: 5px 0;
+    width: 80%;
+}
+.icons{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 215px;
+}
+i{
+    margin:12px 0;
+}
+i:hover{
+    cursor:pointer;
+}
+.icons i{
+    margin:0;
+}
+
+@media screen and (max-width: 1000px){
+    .songInfo{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-20%);
+    }
+    #myProgressBar{
+        padding: 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,40%);
+        width: 80%;
+    }
+    .icons{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .Library{
+    flex-direction: column;
+    }
+    .Library-album{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    margin: 0;
+    width: 171px;
+    }
+    .album-title{
+        
+    }
+    .album-title h1{
+        font-size: 25px;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .timestamp{
+        display:none;
+    }
+    .songName{
+        font-size: 15px;
+    }
+    .Library-song{
+        padding:5px;
+    }
+}

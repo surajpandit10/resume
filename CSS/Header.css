@@ -1,0 +1,133 @@
+.header{
+    color: #bfbfbf;
+    display: flex;
+    z-index: 1;
+    justify-content:space-between;
+    text-transform: none;
+}
+
+.header>ul{
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    margin: 0 25px;
+}
+
+.Header-list li{
+    color: rgba(255, 255, 255, 0.80);
+    font-weight: 800;
+    margin: 22px 10px;
+}
+.Header-list li:hover{
+    color: white;
+    font-size: 16.5px;
+}
+.circle{
+    height: 35x;
+    width: 30px;
+    background: black;
+    border-radius:15px;
+    cursor: pointer;
+    margin: 16px 5px;
+}
+.dark1{
+    font-size: 30px;
+    font-weight: 200;
+    margin: 1px 0px;
+}
+.dark2{
+    font-size: 30px;
+    font-weight: 200;
+    margin: 1px 0px;
+}
+
+.log-in{
+    position: relative;
+    width: 80px;
+    height: 20px;
+    margin: -15px 0;
+    padding: 13px;
+    text-align: center;
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 26px;
+}
+.log-in:hover{
+   scale: 1.05;
+}
+
+.responsive-header{
+    position:absolute;
+    width:100%;
+    display: none;
+}
+.responsive-header .responsive-nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsive-nav>li{
+    margin: 12px  20px;
+    cursor: pointer;
+}
+.responsive-nav li .responsive-logo{
+    height: 40px;
+}
+#open{
+    position: absolute;
+    right: 0;
+}
+#close{
+    position: absolute;
+    right: 0;
+}
+.responsive-nav li .hamburgeropen{
+    content: "";
+    height: 5px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 5px 0;
+    background: white;
+}
+.responsive-nav li .hamburgerclose{
+    content: "";
+    height: 5px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 5px 0;
+    background: white;
+}
+.responsive-nav li .hamburgerclose:nth-child(1){
+    content: "";
+    height: 5px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 15px -30px;
+    position: absolute;
+    background: white;
+    transform: rotate(45deg);
+}
+.responsive-nav li .hamburgerclose:nth-child(2){
+    content: "";
+    height: 5px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 15px -30px;
+    position: absolute;
+    background: white;
+    transform: rotate(135deg);
+}
+
+
+@media screen and (max-width: 1000px){
+    .header>ul{
+        display: none;
+    }
+    .responsive-header{
+        display:flex;
+    }
+}
